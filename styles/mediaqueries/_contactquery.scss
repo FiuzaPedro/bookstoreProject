@@ -1,0 +1,53 @@
+@media only screen and(max-width:800px) {
+    .h1Contact {            
+        top:30%; font-size: 2.5em;
+    }
+    .imgContact {
+        height:400px; width:100%;
+    }        
+    .frmWrapper {        
+        float: none;
+        text-align: center;
+        width:100%;
+        border-bottom:2px double $corFundo;             
+        /*input, textarea {            
+                                    
+        }*/
+        input {
+            height:3em;
+        }
+        input[type="submit"]{
+            text-align: center; width: 35%;
+            background-color: $corFundo; color: $corTextoAlternativo;
+            text-transform: uppercase; font-weight: bold;
+        }    
+    }
+    .infoLocation {
+        float: none;
+        text-align: center;        
+        width:100%;        
+        p {
+            width: 100%; line-height: 1.5em;
+        } 
+        ul {
+            div { display: inline;}
+            .contact_info_icon img {
+                height:$iconHeight - 20; width: $iconWidth - 20;
+            }
+            display: inline;          
+            li {
+                margin:3% ;
+                padding-left: 5%;
+                list-style: none;
+            }
+        }
+        
+    
+    }
+    .clear {
+        clear: both;
+    }
+    .mapContainer {
+        border-top:2px double $corFundo;                     
+    }
+}

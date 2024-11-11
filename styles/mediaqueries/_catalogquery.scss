@@ -1,0 +1,70 @@
+@media only screen and(max-width:700px) {
+    .imgGeral {
+        height:400px; width:100%;
+    }    
+    .h1Catalog {                            
+        top:30%; font-size: 2.5em;        
+    }
+    .catalogSection {                
+        padding:2%;    
+    }    
+    .gridWrapper {        
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-columns: auto auto ;
+        grid-template-rows: 200px auto auto 200px auto auto;
+        grid-template-areas:
+        "hd1 hd2"
+        "ds1 ds2"
+        "au1 au2"        
+        "hd3 hd4"
+        "ds3 ds4"
+        "au3 au4";
+        grid-column-gap: 2em;
+        grid-row-gap: 2em;           
+        margin:1% 0;
+    }
+    .image1 {grid-area: hd1;} .image2 {grid-area: hd2;}
+    .image3 {grid-area: hd3;} .image4 {grid-area:hd4;} //.img5{} .img6{} .img7 {} .img8{}
+    .description1 {grid-area: ds1;} .description2 {grid-area: ds2;} 
+    .description3 {grid-area: ds3;} .description4 {grid-area: ds4;}
+    .author1 {grid-area:au1;border-bottom:2px solid $corFundo; margin-bottom:15%;}
+    .author2{grid-area: au2;border-bottom:2px solid $corFundo;margin-bottom:15%;}
+    .author3{grid-area: au3;border-bottom:2px solid $corFundo;margin-bottom:15%;}
+    .author4{grid-area: au4;border-bottom:2px solid $corFundo;margin-bottom:15%;}
+
+    .grid {
+        padding:10%; 
+        text-align: center;   
+        h2 {
+            margin:0; padding:0;
+        }
+    }
+    .imagesCatalog{
+        background-size: cover;
+    }
+    
+    [class*="author"] {
+        padding:2%;    
+        background-color: rgb(231, 229, 229);
+        display: flex;        
+        justify-content: space-around; 
+        align-items: center;    
+        img {
+            height:$iconHeight + 10px; width:$iconWidth + 10px;
+            border-radius:100%; 
+        }    
+    }
+    .graySpan {
+        color:gray;
+    }
+    .goldSpanCatalog {                    
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        margin:0 10px 0 10px;
+        padding: $sectionPadding;        
+        justify-self: flex-end;
+    }    
+    
+}

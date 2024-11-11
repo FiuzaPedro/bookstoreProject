@@ -1,0 +1,90 @@
+.imgGeral {
+    height:600px; width:100%;
+}
+.titleAlign {
+    text-align: center; width: 100%;
+}
+.h1Catalog {            
+    background-color: $corFundo;
+    color:$corTextoAlternativo;
+    position: absolute;
+    top:40%; font-size: 3.5em;
+    padding:1%; width: 50%;
+    margin-left:25%;
+}
+.catalogSection {        
+    background-color: $corFundoNavBar;
+    padding:2%;    
+}
+.gridWrapper {
+    display: grid;
+    grid-template-rows: 200px 120px 80px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 1em;    
+    margin:5% 0;
+}
+.grid {
+    padding:10%; 
+    text-align: center;   
+    h2 {
+        margin:0; padding:0;
+    }
+}
+.imagesCatalog{
+    background-size: cover;
+}
+//images from grid 1
+.img1 {
+    background-image: url("../img/book8.jpg");
+}
+.img2 {
+    background-image: url("../img/book9.jpg");
+}
+.img3 {
+    background-image: url("../img/books2.jpg");
+}
+.img4 {
+    background-image: url("../img/book11.jpg");
+}
+//end images from grid 1
+[class*="author"] {
+    padding:2%;    
+    background-color: rgb(231, 229, 229);
+    display: flex;        
+    justify-content: space-around; 
+    align-items: center;    
+    img {
+        height:$iconHeight + 10px; width:$iconWidth + 10px;
+        border-radius:100%; 
+    }    
+}
+.graySpan {
+    color:gray;
+}
+.goldSpanCatalog {            
+    background-color: $corFundo;  
+    color:$corTextoAlternativo;
+    font-weight: bold; 
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin:0 10px 0 10px;
+    padding: $sectionPadding;
+    border-radius: 100%;
+    justify-self: flex-end;
+}
+
+//images from grid 2
+.img5 {
+    background-image: url("../img/books9.jpg");
+}
+.img6 {
+    background-image: url("../img/books5.jpg");
+}
+.img7 {
+    background-image: url("../img/books7.jpg");
+}
+.img8 {
+    background-image: url("../img/books10.jpg");
+}
+//end images from grid 2

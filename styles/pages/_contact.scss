@@ -1,0 +1,71 @@
+.h1Contact {            
+    @extend .h1News;
+}
+.imgContact {
+    @extend .imgNews;
+}
+.contactSection {                
+    padding:2%;    
+}
+.contactWrapper {
+    margin-top:2%;
+}
+.frmWrapper {
+    
+    float: left;
+    text-align: center;
+    width:55%;     
+    form {
+        
+    }
+    input, textarea {
+        margin: 2.5% 10%;
+        text-align: left;        
+        display: block;
+        width:80%;
+        padding:1%;
+        background-color: rgb(233, 227, 227);
+        &:focus {
+           outline: 2px solid $corFundo; 
+        }
+    }
+    input {
+        height:3em;
+    }
+    input[type="submit"]{
+        text-align: center; width: 25%;
+        background-color: $corFundo; color: $corTextoAlternativo;
+        text-transform: uppercase; font-weight: bold;
+    }    
+}
+.infoLocation {
+    float: right;
+    width:40%;        
+    p {
+        width: 100%; line-height: 2em;
+    } 
+    ul {
+        div { display: inline;}
+        .contact_info_icon img {
+            height:$iconHeight ; width: $iconWidth ;
+        }
+        display: inline;          
+        li {
+            margin:3% ;
+            padding-left: 3%;
+            list-style: none;
+        }
+    }
+    
+
+}
+.clear {
+    clear: both;
+}
+.mapContainer {
+    width:100%;
+    text-align: center;
+    iframe {
+        width:100%;
+    }
+}

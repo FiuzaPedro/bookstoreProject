@@ -1,0 +1,61 @@
+// testimonial section
+.testimonialSection {    
+    height:800px;
+    padding:$sectionPadding;
+    text-align: center;
+    background-image: url("../img/books3.jpg");
+    background-size: 100% 100%;    
+    h1 {
+        text-transform: uppercase;
+        color:$corTextoAlternativo; 
+        margin-bottom: 5%;
+    }
+}
+.testimonialWrapper {
+    position: relative; 
+    overflow: hidden;       
+    text-align: center;
+    border:2px solid $corFundo;    
+    width:80%; height:500px;
+    margin:0 auto;
+    background-color: rgba(0,0,0, 0.5);
+    .t1, .t2, .t3 {
+        position: absolute;
+        width:90%; height:100%;
+        padding:$sectionPadding; //5%
+        transition: 1s ease-in-out;
+    }
+    .t2, .t3 {
+        left:-100%;
+    }   
+}
+.quote {
+    color:$corFundo; font-size: 2em;
+}
+.pTestimonial {
+    color: $corTextoAlternativo; //white
+    line-height: 2em;
+}
+.imgTestimonial {
+    border-radius:999em;
+    height:100px; width:100px;
+}
+.h3Testimonial {
+    color: $corFundo; text-transform: uppercase;
+}
+
+.breadcrumbs {
+    width:100%; text-align: center;
+    position: absolute;
+    bottom: 10%;
+    .buttonTestimonials{
+        cursor: pointer; margin:0 1%;
+        width:15px; height:15px; border-radius: 100%;
+        background-color: transparent; border:2px solid $corTextoAlternativo;
+    }
+}
+.activeTestimonial {
+    transform:scale(1.5); background-color: $corFundo !important;
+    border:none !important;
+}
+//end testimonial section

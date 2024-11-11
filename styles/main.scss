@@ -1,0 +1,191 @@
+//vars de cores
+$corFundo: gold;
+$corFundoNavBar: white;
+$corTextoAlternativo: white ;
+$corTextoMain: #333131;
+//vars do tamanho dos icons
+$iconHeight: 40px;
+$iconWidth: 40px;
+//vars padding das sections
+$sectionPadding: 5%;
+//var tamanho h1 nas mediaqueries
+$h1size: 1em;
+
+* {
+    transition: 0.2s linear all;
+}
+
+//imports
+@import "./pages/_testimonials";
+@import "./pages/_home"; 
+@import "./pages/_catalog";
+@import "./pages/_news";
+@import "./pages/_contact";
+//imports mediaqueries
+@import "./mediaqueries/_homequery";
+@import "./mediaqueries/_testimonialsquery";
+@import "./mediaqueries/_catalogquery";
+@import "./mediaqueries/_newsquery";
+@import "./mediaqueries/_contactquery";
+
+.activeMenu {
+    width:80%; right:0%;
+}
+.inactiveMenu {
+    width:0%; right:-100%;
+}
+
+body {
+    height:100% ; width:100%;
+    margin:0; padding:0; 
+}
+.activeLink {
+    color:$corFundo;
+}
+.mobileLinks {
+    display: none;
+}
+header {
+    position:fixed;
+    z-index: 999;
+    width:90%; margin-left:2.5%;
+    padding:2%;    
+    nav {
+        padding-left:5%;
+        background-color:$corFundoNavBar;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        box-shadow: 1px 10px 10px black;
+        overflow: hidden;
+        a {
+            color:$corTextoMain;
+            text-decoration: none;
+            &:hover{
+                color:$corFundo;
+            }
+        }
+        ul {                       
+            padding:1%;            
+            list-style: none; 
+            width:80%;                       
+        }
+        li {
+            padding:2%; display: inline; 
+            font-weight: bold;            
+        }
+    }
+    span {
+        background-color: $corFundo;        
+        padding:3.5%;
+        width:20%;                
+    }    
+}
+.iconTitle {
+    height: $iconHeight;
+    width: $iconWidth;
+}
+.iconPhone {
+    height:20px; width:20px;
+}
+
+.goldBar {
+    margin: 0 auto;
+    width:60px; height:4px;
+    background-color:$corFundo;
+}
+
+
+footer {    
+    background-color: $corTextoMain;
+    color:$corTextoAlternativo;
+    padding:3% 4% 4%;
+    .footerWrapper {
+        width:100%; 
+    }
+    a {
+        color:lightblue;
+        text-decoration: none;
+    }
+    hr {
+        background-color: $corTextoAlternativo;
+        margin-bottom:20px;
+    }    
+    .footerAuthor {
+        float: left;
+    }
+    .footerSocial {
+        float: right;
+    }
+    ul, li {
+        display: inline;                
+    }
+    
+    .menu_social_item {
+        color:$corTextoAlternativo;
+        padding:20px;
+        &:hover {
+            color: $corFundo;
+        }        
+    }
+}
+
+
+
+
+
+@media only screen and(max-width:1000px) {
+        
+    .mobileLinks {        
+        height:70% ; 
+        background-color: white;
+        display: block;
+        position: fixed;
+        top:15%; border-top-left-radius: 5%; border-bottom-left-radius: 5%;
+        box-shadow: 1px 10px 10px black;
+        z-index: 999999; 
+        a {
+            text-decoration: none;
+            color: black;
+            &:hover {
+                color: $corFundo;
+            }
+        }
+        ul {
+            text-align: center;
+        }
+        ul li {
+            padding:4%; 
+            list-style: none;
+            letter-spacing: 0.7em;            
+        }
+    }
+}
+
+
+
+
+
+@media only screen and(max-width:700px){
+    
+    footer {            
+        padding:3% 4% 4%;
+        .footerWrapper {
+            width:100%; text-align: center;
+        }        
+        hr {
+            margin-bottom:20px;
+        }    
+        .footerAuthor, .footerSocial {
+            float: none;
+            width:100%;
+        }
+        .footerSocial {
+            margin-top:5%;
+        }           
+        .menu_social_item {        
+            padding:10px;            
+        }
+    } //end footer
+} //end mediaquery Main
+@import "./mediaqueries/_navbarquery";

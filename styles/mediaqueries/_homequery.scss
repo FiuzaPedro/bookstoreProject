@@ -1,0 +1,55 @@
+@media only screen and(max-width:700px) {
+    // slide section
+.slideSection {        
+    .imgSlides {        
+        width:100%; height: 400px;             
+    }
+    .slideContent{
+        position: absolute;
+        top:30%;         
+        width:95%;
+        margin-left:2.5%;
+        text-align: center;
+        button {
+            padding:1.5%; text-transform: uppercase;
+            font-weight: bold; cursor: pointer;
+            &:hover {
+                color:$corTextoAlternativo; background-color: $corFundo;                
+            }
+        }
+        .h1Slide {                        
+            font-size: 1.5em;            
+        }        
+        .rowInfoSlides {
+            margin-top:6%;             
+        }
+        .colInfoSlides {                                                 
+            padding:1% 2.5%; margin:0 1%;                        
+            img{
+                height:$iconHeight -10; width: $iconWidth -10; 
+            }
+            h2 {
+                font-size: 1em;
+            }            
+        }
+    }
+}
+//end slide section query
+
+// info section query
+.infoSection {    
+    height:auto; 
+    padding:$sectionPadding;    
+    h1 {
+        text-transform: uppercase; 
+        font-size: 1.2em;
+    }
+    .info {
+        font-size: $h1size;
+        line-height: 1.5em;
+    }
+}
+//end info section
+
+
+}
